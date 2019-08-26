@@ -1,7 +1,7 @@
 'user strict';
 
 var mongoose = require('mongoose');
-var Task = mongoose.model('Tasks');
+var Task = mongoose.model('Task');
 
 exports.list_all_tasks = function(req, res) {
     Task.find({}, function(err, task) {
